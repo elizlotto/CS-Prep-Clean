@@ -229,7 +229,6 @@ function askMulti (name, questionSet) {
 //////////// RUNNING THE GAME ////////////
 const quizGame = () => {
   const name = prompt('What is your name?');
-  // const intro = prompt(`This is a game about STUFF. To play you will be prompted with questions of varying difficulty. To answer, you will need to type   without the quotations. If you understand this, type "true"`);
   let points;
   let questionType = prompt("Pick your preference: \nEnter 1 for True or False \nEnter 2 for Multiple Choice")
   if (questionType === '1'){
@@ -251,18 +250,9 @@ const quizGame = () => {
     else if (points > 7) {
       return alert (`Good job ${name}, you earned ${points} points.`)
     }    
-    
-//     const theActualGameFunc = () => {
-//        userObj['name'] = name;
-//        userObj['points'] = pointsEarned;
-
-//     }
-
-// return theActualGameFunc;
 };
 
 let newGame = quizGame();
-// newGame()
 
 //////////// END OF RUNNING THE GAME ////////////
 
@@ -270,85 +260,3 @@ let newGame = quizGame();
 
 
 
-
-
-
-
-
-// ///////////
-// const questionsTF = {
-//   "Spock encounters the captain of the USS Enterprise-D on Romulus and initially refuses to help him because he does not trust the Federation of Planets to carry out his mission." : 'true',
-  
-//   "Patrick Stewart been reading Sonnets every day during the COVID-19 shelter-in-place order on his Instagram SIR PAT STEW." : 'true',
-  
-//   "JavaScript is the grandchild of Java." : 'false',
-  
-//   "JavaScript is not an OOP scripting language. True or false? " : 'false',
-
-//   "JavaScript is not a case-sensitive language? True or false? ": 'false',
-
-//   "String – represents single-character, multi-character, and alphanumeric values. True or false?": 'true',
-
-//   "Can you assign an anonymous function to a variable and pass it as an argument to another function?": 'true',
-
-//   "Closure is a locally declared variable that is related to a function and stays in the memory when the related function has returned. True or false?": 'true',
-
-//   "There are three different ways of creating an array in JavaScript. True or false?": 'true',
-
-//   "null == number. True or false?": 'false',
-
-//   "The value of Math.max([2,3,4,5]) is NaN. True or false?": 'true',
-
-//   "There are three types of functions JS support. True or false?": 'false',
-
-// Liz  "0.1 + 0.2 = 0.3. True or false?": 'false',
-
-//   "[10, 5, 1].sort() is [1, 10, 5]. True or false?": 'true'
-  
-// }
-
-// function askTF (name, questionSet) {
-//   let strikeCount = 0;
-//   let pointsEarned = 0;
-//   for (let key in questionSet) {
-//     if (strikeCount === 3) {return}
-//     if (pointsEarned === 10) {
-//     return alert (`Awesome, you are smart and have 10 points to brag about. You win!`)
-//     }
-//     const answer = prompt (`${key} True or False?`); 
-//     if (answer.toLowerCase() == questionSet[key]) {
-//       pointsEarned ++;
-//       alert(`Great job! You now have ${pointsEarned} points!`)
-//     } else if (strikeCount <= 1) {
-//       strikeCount ++;
-//       alert(`Oh no! Wrong answer. You just earned a strike! You are now are stike ${strikeCount} of 3`)
-//     } else {
-//       strikeCount ++;
-//       alert ("That's your third stike. Sorry but... YOU'RE OUT!")
-//     }
-//   }
-// }
-
-// const quizGame = () => {
-//   const name = prompt('What is your name?');
-//   const intro = prompt(`This is a multiple choice game about STUFF. To play you will be prompted with questions of varying difficulty. To answer, you will need to type  "true" or "false" without the quotations. If you understand this, type "true"`);
-    
-//     if (intro === 'true'){
-//     alert(`Great, ${name}! Let's begin`);
-//     } else (console.log(`Try again!`))
-
-//   const userObj = {};
-//   let strikeCount = 0; //if count is 3, game over 
-//   let pointsEarned = 0 // maybe use this instead of the userObj 
-//     const theActualGameFunc = () => {
-//        userObj['name'] = name;
-//        userObj['points'] = pointsEarned;
-
-//     const result = askTF (name, questionsTF);
-//    }
-
-// return theActualGameFunc;
-// }
-
-// let newGame = quizGame();
-// newGame()
